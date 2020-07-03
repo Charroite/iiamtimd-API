@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Critters;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/con', function () {
-    return "con"; 
+Route::get('/critters/{id}/', function ($id) {
+    return Critters::find($id); 
 });
 

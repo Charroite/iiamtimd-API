@@ -14,8 +14,7 @@ class CreateTimecycleTable extends Migration
     public function up()
     {
         Schema::create('timecycle', function (Blueprint $table) {
-            $table->id();
-            $table->integer("time_id");
+            $table->increments("time_id");
             $table->String("time");
         
 

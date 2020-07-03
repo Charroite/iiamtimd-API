@@ -24,15 +24,15 @@ class Critters extends Model
  
 
     public function species(){
-        return $this->hasOne(App\Species);
+        return $this->hasOne(App\Species, 'species');
     }
 
     public function months(){
-        return $this;    
+        return $this->hasOne(App\months, 'month');    
     }
 
     public function timeCycle(){
-        return $this;
+        return $this->hasOne(App\timeCycle, 'time');
     }
     public $timestamps = false;
 }

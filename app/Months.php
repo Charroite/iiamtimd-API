@@ -11,7 +11,7 @@ class Months extends Model
     ];
     
     public function critters(){
-        return $this->belongsToMany(App\Critters);
+        return $this->belongsTo(App\Critters);
     }
 
     public $timestamps = false;

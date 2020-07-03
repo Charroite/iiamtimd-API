@@ -12,9 +12,9 @@ class TimeCycle extends Model
         "time"
     ];
 
-    // public function critters(){
-    //     return $this->belongsToMany(App\Critters);
-    // }
+    public function critters(){
+        return $this->belongsTo(App\Critters);
+    }
 
     public $timestamps = false;
 }
