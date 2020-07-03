@@ -15,7 +15,7 @@ class CreateTimecycleTable extends Migration
     {
         Schema::create('timecycle', function (Blueprint $table) {
             $table->id();
-            //Moet een tijd field worden om te kunnen vergelijken met de huidige tijd...
+            $table->integer("time_id");
             $table->String("time");
         
 

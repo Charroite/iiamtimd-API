@@ -22,8 +22,8 @@ class CreateCrittersTable extends Migration
             $table->String('price');
             $table->integer('month_available_from');
             $table->integer('month_available_to');
-            $table->integer('month_available_also_from');
-            $table->integer('month_available_also_to');
+            $table->integer('month_available_also_from')->unsigned()->nullable();	
+            $table->integer('month_available_also_to')->unsigned()->nullable();
             $table->integer('time_available_from');
             $table->integer('time_available_to');
             $table->boolean('donated');
