@@ -1,4 +1,4 @@
-Deploy instructions WIP:
+Deploy instructions:
 ```bash
 $ composer install
 ```
@@ -15,7 +15,7 @@ npm install
 ```
 Verander de databasecredentials in je .env file
 
-Finally, migrate en seed de database als dit nog niet gedaan is:
+daarna migrate en seed de database als dit nog niet gedaan is:
 ```php
 $ php artisan migrate:fresh --seed
 ```
